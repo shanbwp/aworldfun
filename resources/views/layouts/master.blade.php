@@ -102,9 +102,7 @@
 						<li class="{{request()->is('admin/portfolio*')?'active':''}}">
 							<a href="{{route('category-list')}}"><i class="fa fa-suitcase"></i> <span> Game Category</span></a>
 						</li>
-						<li class="{{request()->is('admin/blog*')?'active':''}}">  
-							<a href="{{route('blog-list')}}"><i class="fa fa-file-text"></i> <span> Blog</span></a>
-						</li>
+					
 						<li class="submenu">
 							<a href="#"><i class="fa fa-cogs"></i> <span> Settings </span> <span class="menu-arrow"></span></a>
 							<ul style="display: none;">

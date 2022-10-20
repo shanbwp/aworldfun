@@ -91,10 +91,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </li>
                                 @endforeach
 
-                                <li class="relative group">
-                                    <a href="{{route('blog')}}" class="ud-menu-scroll  text-base text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-primary   py-2 lg:py-6 lg:inline-flex lg:px-0   flex  mx-8  lg:mr-0 lg:ml-7  xl:ml-12"> Blog </a>
-                                </li>
-
+                                
                             </ul>
                         </nav>
                     </div>

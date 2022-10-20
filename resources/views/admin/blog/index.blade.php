@@ -24,6 +24,7 @@
                <table class="table mb-0">
                   <thead > 
                      <tr>
+                     <th>Category_id</th>
                         <th>Name</th>
                         <th>Date</th>
                         <th>UploadBy</th>
@@ -35,6 +36,7 @@
                   <tbody >
                      @foreach($results as $key)
                      <tr>
+                     <td> {{$key->category_id}}</td>
                         <td> {{$key->name}}</td>
                         <td> {{$key->date}}</td>
                         <td> {{$key->upload_by}}</td>

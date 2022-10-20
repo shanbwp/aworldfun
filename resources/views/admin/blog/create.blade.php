@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-Dashboard || GameFun
+Dashboard || Aworldfun
 @endsection
 @section('content')
 <style>
@@ -28,6 +28,15 @@ Dashboard || GameFun
         <div class="table-responsive">
           <form action="{{route('blog-store')}}" method="post" enctype="multipart/form-data">
             @csrf
+            <div class="form-group">
+                    <label for="category_id">Category Name:</label>
+                    <select class="form-control" id="selectUser" name="category_id" required focus>
+                      <option value="" disabled selected>Please select  Category</option>        
+                      @foreach($categories as $category)
+                      <option value="{{$category->id}}">{{$category->name }}</option>
+                      @endforeach
+                    </select>
+                    </div>s
             <div class="form-group">
               <label for="name">Blog Title:</label>
               <input type="text" name="name" class="form-control" id="name">

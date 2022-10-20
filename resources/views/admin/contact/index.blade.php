@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-Dashboard || GameFun
+Dashboard || Aworldfun
 @endsection
 @section('content')
 <style>
