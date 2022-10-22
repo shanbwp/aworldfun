@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-Dashboard || Influencive
+Dashboard || Aworldfun
 @endsection
 @section('content')
 <style>
