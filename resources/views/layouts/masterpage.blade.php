@@ -15,52 +15,8 @@
     <script>
         new WOW().init();
     </script>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5833552702259075"
-     crossorigin="anonymous"></script>
-     <meta name="google-site-verification" content="iuYnHEaZOcbmcLIWe9FvenNAjj_xwbr7N530Gic_UU0" />
-     <script type="application/ld+json">
-	{
-	  "@context": "https://schema.org",
-	  "@type": "VideoGame",
-  "name": "A Game Fun",
-  "url": "https://agamefun.com/",
-  "image": "https://agamefun.com/assets/images/blog/1660047462WhatsAppImage2022-08-09at4.02.03PM.jpeg",
-  "description": " You can play thousands of free online games and top games for kids- no download, including shooting games, arcade free games, racing car games, dress-up games, and many more on agamefun.com.",	  "inLanguage":["English"],
-  "translator":[" TranslateStudio Inc.","Fānyì zhě Inc."],
-  "aggregateRating":{
-    "@type":"AggregateRating",
-	    "ratingValue":"5"
-	  },
-	  "author":{
-    "@type":"Organization",
-	    "name":"Logicsol",
-    "url":" https://logicssol.com/"
-	},
-  "publisher":"RL Russia",
-	  "genre":["Action (Shooter / Robot)","3D","1st Person"],
-  "processorRequirements":"4 GHz",
-	  "memoryRequirements":"8 Gb",
-	  "storageRequirements":"64 Gb",
-  "gamePlatform":["PC game ", "Xbox One","PlayStation 3"],
-  "softwareAddOn":{
-    "@type":"SoftwareApplication",
-    "name":"New colour of sky",
-    "url":"http://example.com/supergamedlc1"
-  },
-  "associatedMedia":{
-    "@type":"VideoObject",
-    "name":"Super Game review",
-    "duration":"PT1M33S",
-    "thumbnail":"super-game.jpg"
-  },
-  "cheatCode":"To get infinite credits you must first have at least 1 or 2 companions with you"
-}</script>
-
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WXR2S52');</script>
+    <meta name="google-site-verification" content="iuYnHEaZOcbmcLIWe9FvenNAjj_xwbr7N530Gic_UU0" />
+     
 </head>
 
 <body>
@@ -85,7 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <li class="relative group">
                                     <a href="{{route('home')}}" class="ud-menu-scroll text-base text-dark  lg:text-white  lg:group-hover:opacity-70 lg:group-hover:text-white  group-hover:text-primary  py-2  lg:py-6 lg:inline-flex lg:px-0  flex  mx-8  lg:mr-0"> Home</a>
                                 </li>
-                              @foreach($cats as $category)
+                                @foreach($cats as $category)
                                 <li class="relative group">
                                     <a href="{{route('category-game',$category->slug)}}" class="ud-menu-scroll text-base text-dark  lg:text-white  lg:group-hover:opacity-70 lg:group-hover:text-white  group-hover:text-primary  py-2  lg:py-6 lg:inline-flex lg:px-0  flex  mx-8  lg:mr-0"> {{$category->name}} </a>
                                 </li>
@@ -110,8 +66,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="flex flex-wrap items-center -mx-4">
                 <div class="w-full px-4">
                     <div class="text-center">
-                      @yield('banner')
-                      
+                        @yield('banner')
+
                     </div>
                 </div>
             </div>
@@ -143,10 +99,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div class="w-full md:w-2/3 lg:w-1/2 px-4">
                         <div class="my-1">
                             <div class="flex items-center  justify-center md:justify-start -mx-3">
-                                <a href="{{route('about')}}" class="text-base text-[#f3f4fe]   hover:text-primary px-3">   About Us  </a>
-                                <a href="{{route('contact')}}" class="text-base text-[#f3f4fe]   hover:text-primary px-3">   Contact Us  </a>
-                                <a href="{{route('privacypolicy')}}" class="text-base text-[#f3f4fe] hover:text-primary px-3">  Privacy policy </a>
-                                <a href="{{route('termconditions')}}" class="text-base text-[#f3f4fe]  hover:text-primary px-3">  Terms of service </a>
+                                <a href="{{route('about')}}" class="text-base text-[#f3f4fe]   hover:text-primary px-3"> About Us </a>
+                                <a href="{{route('contact')}}" class="text-base text-[#f3f4fe]   hover:text-primary px-3"> Contact Us </a>
+                                <a href="{{route('privacypolicy')}}" class="text-base text-[#f3f4fe] hover:text-primary px-3"> Privacy policy </a>
+                                <a href="{{route('termconditions')}}" class="text-base text-[#f3f4fe]  hover:text-primary px-3"> Terms of service </a>
                             </div>
                         </div>
                     </div>
@@ -172,12 +128,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="w-full md:w-1/3 lg:w-1/4 px-4 pb-4">
                         <div class="flex justify-center  md:justify-end my-1">
                             <p class="text-base text-[#f3f4fe]">
                                 Designed and Developed by
-                                <a href="https://logicssol.com/" rel="nofollow noopner" target="_blank" class="text-primary  hover:underline">  LogicsSol </a>
+                                <a href="https://logicssol.com/" rel="nofollow noopner" target="_blank" class="text-primary  hover:underline"> LogicsSol </a>
                             </p>
                         </div>
                     </div>
@@ -198,14 +154,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script src="{{asset('/assets/js/main.js')}}"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJJKDH1E6T"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-DJJKDH1E6T');
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DJJKDH1E6T');
     </script>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXR2S52"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXR2S52" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </body>
 
 </html>
