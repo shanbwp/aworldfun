@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     use HasFactory;
-    protected $fillable=['name'];
+    protected $fillable=['name','slug','image']; 
 
-    public function portfolios(){
-        return $this->hasMany('App\Models\Portfolio','portfolio_category_id');
+    public function blogs(){
+        return $this->hasMany('App\Models\Blogs','category_id');
     }
 }

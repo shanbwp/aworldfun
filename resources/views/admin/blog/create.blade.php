@@ -5,9 +5,9 @@ Dashboard || Aworldfun
 @endsection
 @section('content')
 <style>
-    .redbg{
-        background-color: rgb(85, 24, 24) !important;
-    }
+  .redbg {
+    background-color: rgb(85, 24, 24) !important;
+  }
 </style>
 <div class="row">
   <div class="col-md-12">
@@ -29,14 +29,14 @@ Dashboard || Aworldfun
           <form action="{{route('blog-store')}}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
-                    <label for="category_id">Category Name:</label>
-                    <select class="form-control" id="selectUser" name="category_id" required focus>
-                      <option value="" disabled selected>Please select  Category</option>        
-                      @foreach($categories as $category)
-                      <option value="{{$category->id}}">{{$category->name }}</option>
-                      @endforeach
-                    </select>
-                    </div>s
+              <label for="category_id">Category Name:</label>
+              <select class="form-control" id="selectUser" name="category_id" required focus>
+                <option value="" disabled selected>Please select Category</option>
+                @foreach($categories as $category)
+                <option value="{{$category->id}}">{{$category->name }}</option>
+                @endforeach
+              </select>
+            </div>
             <div class="form-group">
               <label for="name">Blog Title:</label>
               <input type="text" name="name" class="form-control" id="name">
@@ -49,16 +49,16 @@ Dashboard || Aworldfun
               <label for="country">UploadBy:</label>
               <input type="text" name="upload_by" class="form-control" id="upload_by">
             </div>
-            
+
             <div class="form-group">
               <label for="short_description">Short Description:</label>
-              <textarea name="short_description" class="form-control" id="short_description"></textarea> 
+              <textarea name="short_description" class="form-control" id="short_description"></textarea>
             </div>
             <div class="form-group">
               <label for="description"> Description:</label>
-              <textarea name="description" class="form-control ckeditor" id="description"></textarea> 
+              <textarea name="description" class="form-control ckeditor" id="description"></textarea>
             </div>
-            
+
             <div class="form-group">
               <label for="image">Image:</label>
               <input type="file" name="image" class="form-control" id="image">
@@ -73,11 +73,11 @@ Dashboard || Aworldfun
             </div>
             <div class="form-group">
               <label for="meta_description">Meta_Description:</label>
-              <textarea name="meta_description" class="form-control " id="meta_description"></textarea> 
+              <textarea name="meta_description" class="form-control " id="meta_description"></textarea>
             </div>
             <div class="form-group">
               <label for="slug"> Slug:</label>
-              <input type="text" name="slug" class="form-control " id="slug"> 
+              <input type="text" name="slug" class="form-control " id="slug">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
@@ -89,8 +89,4 @@ Dashboard || Aworldfun
 </div>
 </div>
 
-@endsection
-
-@section('scripts')
-
-@endsection
+@endsection 

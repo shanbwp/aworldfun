@@ -6,9 +6,9 @@ Dashboard || Blog update
 
 @section('content')
 <style>
-    .redbg{
-        background-color: rgb(119, 57, 57) !important;
-    }
+  .redbg {
+    background-color: rgb(119, 57, 57) !important;
+  }
 </style>
 <div class="row">
   <div class="col-md-12">
@@ -30,6 +30,15 @@ Dashboard || Blog update
           <form action="{{route('blog-update',['id'=>$data->id])}}" method="post" enctype='multipart/form-data'>
             @csrf
             <div class="form-group">
+              <label for="category_id">Category Name:</label>
+              <select class="form-control" id="selectUser" name="category_id" required focus>
+                <option value="" disabled selected>Please select Category</option>
+                @foreach($categories as $category)
+                <option value="{{$category->id}}" {{$data->category_id==$category->id?'selected':''}}>{{$category->name }}</option>
+                @endforeach
+              </select>
+            </div>
+            <div class="form-group">
               <label for="title1">Blog Title:</label>
               <input type="text" name="name" value="{{$data->name}}" class="form-control" id="name">
             </div>
@@ -39,11 +48,11 @@ Dashboard || Blog update
             </div>
             <div class="form-group">
               <label for="short_description">Short Description:</label>
-              <textarea name="short_description"   class="form-control" id="short_description">{{$data->short_description}}</textarea> 
+              <textarea name="short_description" class="form-control" id="short_description">{{$data->short_description}}</textarea>
             </div>
             <div class="form-group">
               <label for="description"> Description:</label>
-              <textarea name="description"   class="form-control ckeditor" id="description">{{$data->description}}</textarea> 
+              <textarea name="description" class="form-control ckeditor" id="description">{{$data->description}}</textarea>
             </div>
             <div class="form-group">
               <label for="upload_by">Create BY:</label>
@@ -51,20 +60,20 @@ Dashboard || Blog update
             </div>
             <div class="form-group">
               <label for="image">Image:</label>
-              <input type="file" name="image"class="form-control" id="image">
+              <input type="file" name="image" class="form-control" id="image">
               <img src="{{asset('assets/images/blog/' . $data->image)}}" hieght="50px" width="50px" alt="image">
             </div>
             <div class="form-group">
               <label for="meta_tag">Meta_Tag:</label>
-              <textarea name="meta_tag" class="form-control " id="meta_tag">{{$data->meta_tag}}</textarea> 
+              <textarea name="meta_tag" class="form-control " id="meta_tag">{{$data->meta_tag}}</textarea>
             </div>
             <div class="form-group">
               <label for="meta_title">Meta_Title:</label>
-              <textarea name="meta_title" class="form-control" id="meta_title">{{$data->meta_title}}</textarea> 
+              <textarea name="meta_title" class="form-control" id="meta_title">{{$data->meta_title}}</textarea>
             </div>
             <div class="form-group">
               <label for="meta_description">Meta_Description:</label>
-              <textarea name="meta_description" class="form-control " id="meta_description">{{$data->meta_description}}</textarea> 
+              <textarea name="meta_description" class="form-control " id="meta_description">{{$data->meta_description}}</textarea>
             </div>
             <div class="form-group">
               <label for="slug"> Slug:</label>
@@ -80,8 +89,4 @@ Dashboard || Blog update
 </div>
 </div>
 
-@endsection
-
-@section('scripts')
-
-@endsection
+@endsection 

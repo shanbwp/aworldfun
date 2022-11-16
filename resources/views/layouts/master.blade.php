@@ -92,15 +92,15 @@
 						<li class="{{request()->is('admin/contact*')?'active':''}}">
 							<a href="{{route('contact-list')}}"><i class="fa fa-address-book"></i> <span> Contact</span></a>
 						</li>
-						<li class="{{request()->is('admin/contact*')?'active':''}}">
+						<li class="{{request()->is('admin/slider*')?'active':''}}">
 							<a href="{{route('slider-list')}}"><i class="fa fa-address-book"></i> <span> slider</span></a>
 						</li>
 						
-						<li class="{{request()->is('admin/portfolio*')?'active':''}}">
-							<a href="{{route('game-list')}}"><i class="fa fa-suitcase"></i> <span> Games</span></a>
+						<li class="{{request()->is('admin/blog*')?'active':''}}">
+							<a href="{{route('blog-list')}}"><i class="fa fa-suitcase"></i> <span> Blogs</span></a>
 						</li>
-						<li class="{{request()->is('admin/portfolio*')?'active':''}}">
-							<a href="{{route('category-list')}}"><i class="fa fa-suitcase"></i> <span> Game Category</span></a>
+						<li class="{{request()->is('admin/category*')?'active':''}}">
+							<a href="{{route('category-list')}}"><i class="fa fa-suitcase"></i> <span>  Category</span></a>
 						</li>
 					
 						<li class="submenu">

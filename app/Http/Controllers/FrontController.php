@@ -11,8 +11,8 @@ class FrontController extends Controller
 {
     public function Home()
     {  
-      $game_cat     = Category::get();
-      $blogs         = Blog::paginate(5);
+      $game_cat      = Category::get();
+      $blogs         = Blog::paginate(15);
 
       return view('front.game', compact('game_cat','blogs'));
     }

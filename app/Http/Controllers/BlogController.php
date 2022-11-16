@@ -48,7 +48,8 @@ class BlogController extends Controller
     public function edit($id)
     {
         $data = Blog::findOrFail($id);
-        return view('admin.blog.edit',compact('data'));
+        $categories = Category::all();
+        return view('admin.blog.edit',compact('data','categories'));
 
     }
 
